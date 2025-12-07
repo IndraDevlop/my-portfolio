@@ -5,6 +5,7 @@ import path from 'path';
 
 // https://vite.dev/config/
 export default defineConfig({
+  base: "/my-portfolio/",
   server: {
     // Tambahkan host ngrok Anda di sini
     allowedHosts: [
