@@ -5,20 +5,19 @@ import path from 'path';
 
 // https://vite.dev/config/
 export default defineConfig({
-  base: "/my-portfolio/",
+  base: "/my-portfolio/",   // WAJIB untuk GitHub Pages
+  plugins: [react(), tailwindcss()],
   server: {
-    // Tambahkan host ngrok Anda di sini
     allowedHosts: [
-      'a0d78af6ed1c.ngrok-free.app',
-      'localhost', // Biasanya sudah termasuk, tapi aman untuk ditambahkan
-      '127.0.0.1'
+      "a0d78af6ed1c.ngrok-free.app",
+      "localhost",
+      "127.0.0.1",
     ],
   },
-  plugins: [react(), tailwindcss()],
-  assetsInclude: ['**/*.glb'],
+  assetsInclude: ["**/*.glb"],
   resolve: {
     alias: {
       "@": path.resolve(__dirname, "./src"),
     },
   },
-})
+});
