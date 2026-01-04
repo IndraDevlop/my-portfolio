@@ -1,0 +1,38 @@
+/* src/components/ui/Lanyard.css */
+.lanyard-wrapper {
+  position: relative;
+  z-index: 0;
+  width: 100%;
+  height: 100%; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: scale(1);
+  transform-origin: center;
+  overflow: visible !important; 
+}
+
+/* buka semua wrapper internal Canvas */
+.lanyard-wrapper > div {
+  overflow: visible !important;
+}
+
+/* wrapper kedua dari Canvas: */
+.lanyard-wrapper > div > div {
+  overflow: visible !important;
+}
+
+/* just in case R3F adds more nested divs later */
+.lanyard-wrapper * {
+  overflow: visible !important;
+}
+
+
+.lanyard-wrapper > div > div {
+  overflow: visible !important;
+}
+
+/* kalau R3F berubah struktur, ini memastikan semua anak wrapper terbuka */
+.lanyard-wrapper * {
+  overflow: visible !important;
+}
